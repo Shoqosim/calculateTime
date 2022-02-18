@@ -1,0 +1,61 @@
+
+body{
+    background-color: black;
+}
+.container{
+    display: flex;
+    width:250px;
+    margin: 300px auto;
+    margin-bottom:20px;
+}
+
+.hour_div,
+.minut_div,
+.millisekund_{
+    display:flex;
+}
+
+.minut_div::before{
+    content: ':'; 
+    color: white;
+    font-size: 72px;
+}
+
+.millisekund_::before{
+    content: '.';
+    color: white;
+    font-size: 72px;
+}
+
+.hour, .second_hour,.minut,.second_minut,.millisekund,.second_millisekund{
+    color: white;
+    font-size: 72px;
+}
+
+.btn_div{
+    margin: 0 auto;
+    width: 240px;
+    display: flex;
+}
+
+.stop_button:active{
+    background-color: rgb(43, 46, 226);
+}
+
+.button,.stop_button{
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: brown;
+    box-sizing: border-box;
+    width: 100px;
+    padding:7px;
+    color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.button:active{
+    background-color: blueviolet;
+}
+
